@@ -1,0 +1,32 @@
+[core]
+	autocrlf = true
+	excludesfile = 
+[core] 
+	packedGitLimit = 512m 
+	packedGitWindowSize = 512m 
+[pack] 
+	deltaCacheSize = 2047m 
+	packSizeLimit = 2047m 
+	windowMemory = 2047m
+[alias]
+	hist = log --all --graph --decorate --oneline
+[commit]
+	template = ~/.gitmessage
+	gpgsign = true
+[diff]
+	tool = winmerge
+[difftool]
+	prompt = false
+[difftool "sourcetree"]
+	cmd = '' \"$LOCAL\" \"$REMOTE\"
+[difftool "winmerge"]
+	cmd = "'C:/Program Files (x86)/WinMerge/WinMergeU.exe'" -u -s -e "$LOCAL" "$REMOTE" -dl "Original" -dr "Modified"
+[merge]
+	tool = winmerge
+[mergetool]
+	prompt = false
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true
+[mergetool "winmerge"]
+	cmd = "'C:/Program Files (x86)/WinMerge/WinMergeU.exe'" -u -s -e "$LOCAL" "$REMOTE" -dl "Original" -dr "Modified"
