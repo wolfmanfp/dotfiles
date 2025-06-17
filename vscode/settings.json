@@ -1,0 +1,21 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "extensions.ignoreRecommendations": true,
+  "files.associations": {
+    "*.zsc": "zscript",
+    "*.ksy": "yaml"
+  },
+  "git.allowForcePush": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "json": false
+  },
+  "holiday.gearIconStyle": "santa hat", // Pepperidge Farm remembers
+  "telemetry.enableTelemetry": false,
+  "window.titleBarStyle": "custom",
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true
+}
